@@ -19,11 +19,10 @@ public class CreateDriverSessionAndroid {
         caps.setCapability("appPackage", "io.appium.android.apis");
         caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
 
-        /*
-        caps.setCapability(MobileCapabilityType.APP,
-                "/Users/tribe/Desktop/Projects/FirstAppiumProject/src/main/resources/ApiDemos-debug.apk");
+       /* caps.setCapability(MobileCapabilityType.APP,
+              "/Users/tribe/Desktop/Projects/MyFirstAppiumProject/src/main/resources/ApiDemos-debug.apk");
               //  ==> Yüklenmemiş uygulamayı mobil cihaza yüklemek için kullanılır.
-              */
+        */
 
 
         URL url = new URL("http://0.0.0.0:4723/");
