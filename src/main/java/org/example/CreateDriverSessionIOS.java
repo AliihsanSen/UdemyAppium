@@ -16,6 +16,7 @@ public class CreateDriverSessionIOS {
         caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
         caps.setCapability(MobileCapabilityType.UDID, "96D013BE-5B8C-4F7C-AAF6-AA5A4CDB0275");
+        //caps.setCapability("simulatorStartupTimeout",180000);
         caps.setCapability(MobileCapabilityType.APP,
                 "/Users/tribe/Desktop/Projects/MyFirstAppiumProject/src/main/resources/UIKitCatalog-iphonesimulator.app");
 
