@@ -24,11 +24,9 @@ public class CreateDriverSessionAndroid {
               //  ==> Yüklenmemiş uygulamayı mobil cihaza yüklemek için kullanılır.
         */
 
-
         URL url = new URL("http://0.0.0.0:4723/");
 
         AppiumDriver driver = new AndroidDriver(url, caps);
-
 
     }
 }
