@@ -16,8 +16,8 @@ public class CreateDriverSessionAndroid {
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
         caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
         caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
-       caps.setCapability("appPackage", "io.appium.android.apis");
-       caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
+        caps.setCapability("appPackage", "io.appium.android.apis");
+        caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
 
         /* caps.setCapability(MobileCapabilityType.APP,
                 "/Users/tribe/Desktop/Projects/FirstAppiumProject/src/main/resources/ApiDemos-debug.apk");
