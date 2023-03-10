@@ -30,6 +30,5 @@ public class CreateDriverSessionAndroid {
         AppiumDriver driver = new AndroidDriver(url, caps);
         System.out.println("Session Id : " + driver.getSessionId());
 
-
     }
 }
