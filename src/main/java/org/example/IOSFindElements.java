@@ -12,7 +12,7 @@ public class IOSFindElements {
 
         AppiumDriver driver = CreateDriverSessionOptions.initializeDriver("IOS");
 
-        driver.findElement(MobileBy.AccessibilityId("Activity Indicators"));
+
         WebElement myElement =  driver.findElement(MobileBy.AccessibilityId("Activity Indicators"));
         System.out.println(myElement.getText());
 
