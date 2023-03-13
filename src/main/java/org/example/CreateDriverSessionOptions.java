@@ -10,11 +10,7 @@ import java.net.URL;
 
 public class CreateDriverSessionOptions {
 
-    public static void main(String[] args) {
-
-    }
-
-    public static AppiumDriver initializeDriver(String platformName) throws MalformedURLException {
+    public static AppiumDriver initializeDriver(String platformName) throws Exception {
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME,platformName);
@@ -47,6 +43,9 @@ public class CreateDriverSessionOptions {
                         "/Users/tribe/Desktop/Projects/MyFirstAppiumProject/src/main/resources/UIKitCatalog-iphonesimulator.app");
 
                 return new IOSDriver(url,caps);
+
+            default:
+                throw new Exception("Invalid Platform");
 
         }
 
