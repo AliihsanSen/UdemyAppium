@@ -14,7 +14,7 @@ public class CreateDriverSessionOptions {
 
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME,platformName);
-        caps.setCapability("newCommandTimeıut",300);
+
 
         URL url = new URL("http://0.0.0.0:4723/");
 
