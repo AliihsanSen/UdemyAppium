@@ -49,6 +49,5 @@ public class CreateDriverSessionOptions {
                 throw new Exception("Invalid Platform");
 
         }
-
     }
 }
