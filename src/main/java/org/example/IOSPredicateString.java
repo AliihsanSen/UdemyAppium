@@ -4,7 +4,7 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import org.openqa.selenium.WebElement;
 
-public class iOSPredicateString {
+public class IOSPredicateString {
 
     public static void main(String[] args) throws Exception {
 
