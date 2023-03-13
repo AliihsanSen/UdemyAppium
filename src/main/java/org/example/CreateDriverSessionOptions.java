@@ -22,15 +22,15 @@ public class CreateDriverSessionOptions {
             case "Android":
                 caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
                 caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-                caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
+                //  caps.setCapability(MobileCapabilityType.UDID, "emulator-5554");
                 caps.setCapability("avdLaunchTimeout", 180000);
-                caps.setCapability("appPackage", "io.appium.android.apis");
-                caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
+                //  caps.setCapability("appPackage", "io.appium.android.apis");
+                //  caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
 
-       /* caps.setCapability(MobileCapabilityType.APP,
-              "/Users/tribe/Desktop/Projects/MyFirstAppiumProject/src/main/resources/ApiDemos-debug.apk");
-              //  ==> Yüklenmemiş uygulamayı mobil cihaza yüklemek için kullanılır.
-        */
+                caps.setCapability(MobileCapabilityType.APP,
+                        "/Users/tribe/Desktop/Projects/MyFirstAppiumProject/src/main/resources/ApiDemos-debug.apk");
+                //  ==> Yüklenmemiş uygulamayı mobil cihaza yüklemek için kullanılır.
+
 
                 return new AndroidDriver(url,caps);
 
