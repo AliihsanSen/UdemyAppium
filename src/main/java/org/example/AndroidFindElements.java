@@ -11,7 +11,7 @@ public class AndroidFindElements {
         AppiumDriver driver = CreateDriverSessionOptions.initializeDriver("Android");
 
         MobileElement myElement = (MobileElement) driver.findElementByAccessibilityId("Accessibility");
-        System.out.println(myElement);
+        System.out.println(myElement.getText());
 
 
     }

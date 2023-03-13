@@ -31,8 +31,10 @@ public class CreateDriverSessionOptions {
               "/Users/tribe/Desktop/Projects/MyFirstAppiumProject/src/main/resources/ApiDemos-debug.apk");
               //  ==> Yüklenmemiş uygulamayı mobil cihaza yüklemek için kullanılır.
         */
+
                 return new AndroidDriver(url,caps);
-            case "iOS":
+
+            case "IOS":
 
                 caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "IOS");
                 caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14");
