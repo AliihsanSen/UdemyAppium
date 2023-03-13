@@ -19,6 +19,9 @@ public class IOSFindElements {
         myElement = driver.findElement(MobileBy.id("Activity Indicators"));
         System.out.println(myElement.getText());
 
+        myElement =driver.findElement(MobileBy.name("Activity Indicators"));
+        System.out.println(myElement.getText());
+
         myElement = driver.findElement(MobileBy.className("XCUIElementTypeStaticText"));
         System.out.println(myElement.getText());
 
