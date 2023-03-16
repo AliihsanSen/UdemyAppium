@@ -1,12 +1,13 @@
-package org.example;
+package org.example.AndroidGesture;
 
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
+import org.example.CreateDriverSessionOptions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebElement;
 
-public class AndroidGestures {
+public class AndroidGesturesLongClick {
 
     public static void main(String[] args) throws Exception {
 
