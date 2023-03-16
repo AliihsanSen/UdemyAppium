@@ -21,8 +21,13 @@ public class AndroidGestures {
         driver.findElement(MobileBy.AccessibilityId("Drag and Drop")).click();
         WebElement element = driver.findElement(MobileBy.id("io.appium.android.apis:id/drag_dot_1"));
         driver.executeScript("mobile: longClickGesture",
-                ImmutableMap.of("elementId",((RemoteWebElement)element).getId()));
+                ImmutableMap.of("elementId",((RemoteWebElement)element).getId(),
+                        "duration",1000));
 
+       /*
+        driver.executeScript("mobile: longClickGesture",
+                ImmutableMap.of("x",218, "y",580,"duration",1000));
+                */
 
     }
 }
