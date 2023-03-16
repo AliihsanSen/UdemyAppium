@@ -18,8 +18,8 @@ public class FetchElementAttributes {
         System.out.println("selected : " + driver.findElement(accessibility).getAttribute("selected"));
         System.out.println("visible : " + driver.findElement(accessibility).getAttribute("visible"));
 
-        System.out.println("selected:" + driver.findElement(accessibility).isSelected());
-        System.out.println("enabled:" + driver.findElement(accessibility).isEnabled());
-        System.out.println("displayed:" + driver.findElement(accessibility).isDisplayed());
+        System.out.println("selected : " + driver.findElement(accessibility).isSelected());
+        System.out.println("enabled : " + driver.findElement(accessibility).isEnabled());
+        System.out.println("displayed : " + driver.findElement(accessibility).isDisplayed());
     }
 }
