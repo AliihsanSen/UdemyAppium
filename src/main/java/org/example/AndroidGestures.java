@@ -12,4 +12,9 @@ public class AndroidGestures {
         driver.findElement(MobileBy.AccessibilityId("Drag and Drop")).click();
 
     }
+
+    public void longClickGesture(AppiumDriver driver ){
+
+
+    }
 }
