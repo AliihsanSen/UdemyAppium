@@ -2,6 +2,7 @@ package org.example;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
+import org.openqa.selenium.WebElement;
 
 public class AndroidGestures {
 
@@ -14,6 +15,8 @@ public class AndroidGestures {
     }
 
     public void longClickGesture(AppiumDriver driver ){
+
+        WebElement element = driver.findElement(MobileBy.id("io.appium.android.apis:id/drag_dot_1"));
 
 
     }
