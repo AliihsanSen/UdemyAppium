@@ -25,9 +25,5 @@ public class AndroidGesturesClick {
         driver.executeScript("mobile: ClickGesture",
                 ImmutableMap.of("x",218, "y",580,"duration",1000));
 
-
-
-
-
     }
 }
