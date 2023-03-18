@@ -12,6 +12,7 @@ public class AndroidGesturesClick {
     public static void main(String[] args) throws Exception {
 
         AppiumDriver driver = CreateDriverSessionOptions.initializeDriver("Android");
+        ClickGesture(driver);
 
     }
 
@@ -20,14 +21,13 @@ public class AndroidGesturesClick {
         driver.findElement(MobileBy.AccessibilityId("Views")).click();
         driver.findElement(MobileBy.AccessibilityId("Drag and Drop")).click();
         WebElement element = driver.findElement(MobileBy.id("io.appium.android.apis:id/drag_dot_1"));
-        driver.executeScript("mobile: longClickGesture",
-                ImmutableMap.of("elementId",((RemoteWebElement)element).getId(),
-                        "duration",1000));
 
-       /*
-        driver.executeScript("mobile: longClickGesture",
+        driver.executeScript("mobile: ClickGesture",
                 ImmutableMap.of("x",218, "y",580,"duration",1000));
-                */
+
+
+
+
 
     }
 }
