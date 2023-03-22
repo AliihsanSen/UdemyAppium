@@ -18,11 +18,16 @@ public class AndroidGesturesSwipe {
     public static void swipeGesture(AppiumDriver driver){
 
         driver.findElement(MobileBy.AccessibilityId("Views")).click();
-        WebElement element = driver.findElement(MobileBy.id("android:id/list"));
+        driver.findElement(MobileBy.AccessibilityId("Gallery")).click();
+        driver.findElement(MobileBy.AccessibilityId("1. Photos")).click();
 
-        driver.executeScript("mobile: swipeGesture",
-                ImmutableMap.of("elementId",((RemoteWebElement)element).getId(),
-                        "direction","up","percent",0.75));
+        WebElement element = driver.findElement(MobileBy.
+                xpath("//*[@resource-id=\"io.appium.android.apis:id/gallery\"]/android.widget.ImageView[1]"));
 
+        driver.executeScript("mobile: swipeGesture", ImmutableMap.of(
+                "elementId", ((RemoteWebElement) element).getId(),
+                "direction", "left",
+                "percent", 0.75
+        ));
     }
 }
