@@ -18,8 +18,6 @@ public class AndroidGesturesSwipe {
     public static void swipeGesture(AppiumDriver driver){
 
         driver.findElement(MobileBy.AccessibilityId("Views")).click();
-
-
         WebElement element = driver.findElement(MobileBy.id("android:id/list"));
 
         driver.executeScript("mobile: swipeGesture",
