@@ -15,9 +15,7 @@ public class iOSGesturesTouchAndHold {
 
         AppiumDriver driver = CreateDriverSessionOptions.initializeDriver("IOS");
         touchAndHold(driver);
-
     }
-
     public static void touchAndHold(AppiumDriver driver){
         driver.findElement(MobileBy.AccessibilityId("Steppers")).click();
 
