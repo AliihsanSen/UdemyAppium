@@ -14,6 +14,7 @@ public class iOSGesturesTouchAndHold {
     public static void main(String[] args) throws Exception {
 
         AppiumDriver driver = CreateDriverSessionOptions.initializeDriver("IOS");
+        touchAndHold(driver);
 
     }
 
