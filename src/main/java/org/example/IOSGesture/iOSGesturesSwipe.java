@@ -13,7 +13,8 @@ public class iOSGesturesSwipe {
 
     public static void main(String[] args) throws Exception {
 
-        AppiumDriver driver = CreateDriverSessionOptions.initializeDriver("Android");
+        AppiumDriver driver = CreateDriverSessionOptions.initializeDriver("IOS");
+        swipeGesture(driver);
     }
     public static void swipeGesture(AppiumDriver driver) {
 
