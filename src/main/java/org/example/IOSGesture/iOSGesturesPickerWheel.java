@@ -60,7 +60,5 @@ public class iOSGesturesPickerWheel {
                 flag = true;
             }
         }
-
     }
-
 }
