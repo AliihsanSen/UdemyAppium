@@ -1,4 +1,4 @@
-package org.example;
+package org.example.Ios;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;

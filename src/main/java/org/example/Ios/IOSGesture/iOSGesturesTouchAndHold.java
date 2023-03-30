@@ -1,4 +1,4 @@
-package org.example.IOSGesture;
+package org.example.Ios.IOSGesture;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
@@ -9,19 +9,22 @@ import org.openqa.selenium.remote.RemoteWebElement;
 import java.util.HashMap;
 import java.util.Map;
 
-public class iOSGesturesTap {
+public class iOSGesturesTouchAndHold {
+
     public static void main(String[] args) throws Exception {
 
         AppiumDriver driver = CreateDriverSessionOptions.initializeDriver("IOS");
-        tap(driver);
+        touchAndHold(driver);
     }
-    public static void tap(AppiumDriver driver){
-        WebElement element = driver.findElement(MobileBy.AccessibilityId("Steppers"));
+    public static void touchAndHold(AppiumDriver driver){
+        driver.findElement(MobileBy.AccessibilityId("Steppers")).click();
+
+        WebElement element = driver.findElement(MobileBy
+                .iOSClassChain("**/XCUIElementTypeButton[`label == \"Increment\"`][1]"));
 
         Map<String, Object> params = new HashMap<>();
         params.put("elementId", ((RemoteWebElement) element).getId());
-        params.put("x", 0);
-        params.put("y", 0);
-        driver.executeScript("mobile: tap", params);
+        params.put("duration", 5);
+        driver.executeScript("mobile: touchAndHold", params);
     }
 }

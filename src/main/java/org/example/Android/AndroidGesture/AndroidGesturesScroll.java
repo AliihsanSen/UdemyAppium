@@ -1,4 +1,4 @@
-package org.example.AndroidGesture;
+package org.example.Android.AndroidGesture;
 
 import com.google.common.collect.ImmutableMap;
 import io.appium.java_client.AppiumDriver;

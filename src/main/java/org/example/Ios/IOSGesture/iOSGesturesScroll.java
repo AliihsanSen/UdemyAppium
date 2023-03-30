@@ -1,4 +1,4 @@
-package org.example.IOSGesture;
+package org.example.Ios.IOSGesture;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;

@@ -1,7 +1,8 @@
-package org.example;
+package org.example.Ios;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
+import org.example.CreateDriverSessionOptions;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
