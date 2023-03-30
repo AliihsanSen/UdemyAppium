@@ -26,5 +26,6 @@ public class iOSGesturesTouchAndHold {
         params.put("elementId", ((RemoteWebElement) element).getId());
         params.put("duration", 5);
         driver.executeScript("mobile: touchAndHold", params);
+
     }
 }
