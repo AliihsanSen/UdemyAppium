@@ -14,7 +14,7 @@ public class iOSGesturesPickerWheel {
     public static void main(String[] args) throws Exception {
 
         AppiumDriver driver = CreateDriverSessionOptions.initializeDriver("IOS");
-
+        pickerWheel(driver);
     }
     public static void pickerWheel(AppiumDriver driver){
         driver.findElement(MobileBy.AccessibilityId("Picker View")).click();
