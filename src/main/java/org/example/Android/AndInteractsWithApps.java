@@ -19,6 +19,7 @@ public class AndInteractsWithApps {
 
         By views = MobileBy.AccessibilityId("Views");
         driver.findElement(views).click();
+        System.out.println(driver.queryAppState("io.appium.android.apis"));
         Thread.sleep(3000);
 
         driver.terminateApp("io.appium.android.apis");
