@@ -25,7 +25,7 @@ public class iOSInteractWithKeyboard {
         int startY = (int) (size.height*0.8);
         int endY = (int) (size.height*0.2);
 
-        for( int i =0; i<3;i++){
+        for( int i =0; i<1;i++){
             TouchAction touchAction = new TouchAction(driver);
             touchAction.press(PointOption.point(startX, startY))
                     .waitAction(WaitOptions.waitOptions(Duration.ofMillis(2000)))
