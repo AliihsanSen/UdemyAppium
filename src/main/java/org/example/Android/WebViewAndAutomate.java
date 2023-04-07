@@ -29,7 +29,6 @@ public class WebViewAndAutomate {
         int endX = startX;
         int startY = (int) (size.height*0.8);
         int endY = (int) (size.height*0.2);
-
         for( int i =0; i<3;i++){
             TouchAction touchAction = new TouchAction(driver);
             touchAction.press(PointOption.point(startX, startY))
