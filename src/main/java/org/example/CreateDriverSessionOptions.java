@@ -38,7 +38,7 @@ public class CreateDriverSessionOptions {
                 caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "IOS");
                 caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14");
                 caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
-                caps.setCapability(MobileCapabilityType.UDID, "96D013BE-5B8C-4F7C-AAF6-AA5A4CDB0275");
+                caps.setCapability(MobileCapabilityType.UDID, "1F4002FB-EBF5-43CB-818F-6D23CFBA045E");
                 //  caps.setCapability("simulatorStartupTimeout",180000);
                 caps.setCapability(MobileCapabilityType.APP,
                         "/Users/tribe/Desktop/Projects/MyFirstAppiumProject/src/main/resources/UIKitCatalog-iphonesimulator.app");
@@ -47,7 +47,6 @@ public class CreateDriverSessionOptions {
 
             default:
                 throw new Exception("Invalid Platform");
-
         }
     }
 }
