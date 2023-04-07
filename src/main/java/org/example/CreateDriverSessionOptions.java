@@ -34,7 +34,6 @@ public class CreateDriverSessionOptions {
                 return new AndroidDriver(url,caps);
 
             case "IOS":
-
                 caps.setCapability(MobileCapabilityType.PLATFORM_NAME, "IOS");
                 caps.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone 14");
                 caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, "XCUITest");
