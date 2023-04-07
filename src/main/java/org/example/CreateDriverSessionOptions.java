@@ -26,7 +26,6 @@ public class CreateDriverSessionOptions {
                 caps.setCapability("avdLaunchTimeout", 180000);
                 //  caps.setCapability("appPackage", "io.appium.android.apis");
                 //  caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
-
                 caps.setCapability(MobileCapabilityType.APP,
                         "/Users/tribe/Desktop/Projects/MyFirstAppiumProject/src/main/resources/ApiDemos-debug.apk");
                 //  ==> Yüklenmemiş uygulamayı mobil cihaza yüklemek için kullanılır.
